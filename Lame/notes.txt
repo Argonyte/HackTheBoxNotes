@@ -1,0 +1,3 @@
+gained user access using distccd v1 flag under home
+get root using Samba smbd 3.0.20
+

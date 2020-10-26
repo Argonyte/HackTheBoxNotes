@@ -1,0 +1,30 @@
+# Nmap 7.80 scan initiated Sun Apr  5 23:28:12 2020 as: nmap -T4 -p- -A -o nmap.txt 10.10.10.68
+Nmap scan report for 10.10.10.68
+Host is up (0.18s latency).
+Not shown: 65534 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Arrexel's Development Site
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=4/5%OT=80%CT=1%CU=30316%PV=Y%DS=2%DC=T%G=Y%TM=5E8A1EC5
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=104%TI=Z%CI=I%II=I%TS=8)SEQ(
+OS:SP=100%GCD=1%ISR=104%TI=Z%CI=I%TS=8)OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3
+OS:=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)WIN(W1=7120%W2=7
+OS:120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW
+OS:7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF
+OS:=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=
+OS:%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=
+OS:0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RI
+OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+TRACEROUTE (using port 256/tcp)
+HOP RTT       ADDRESS
+1   244.07 ms 10.10.14.1
+2   245.30 ms 10.10.10.68
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  5 23:39:09 2020 -- 1 IP address (1 host up) scanned in 656.59 seconds

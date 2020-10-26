@@ -1,0 +1,80 @@
+# Nmap 7.80 scan initiated Thu Apr 30 19:06:29 2020 as: nmap -T4 -A -v -p- -o nmap.txt 10.10.10.171
+Increasing send delay for 10.10.10.171 from 0 to 5 due to 365 out of 911 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -105546 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -105546 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -105648 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -105648 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -108435 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -108435 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -109204 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -109204 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -157920 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -157920 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -160776 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -160776 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -159665 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -159665 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -820478 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -820478 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -821780 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -821780 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -291236 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -291236 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -292580 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -292580 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -410118 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -410118 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -403468 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -403468 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1667692 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1667692 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -540674 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -540674 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -428708 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -428708 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -428348 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -428348 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -523874 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -523874 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1889276 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1889276 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.171
+Host is up (0.15s latency).
+Not shown: 65533 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4b:98:df:85:d1:7e:f0:3d:da:48:cd:bc:92:00:b7:54 (RSA)
+|   256 dc:eb:3d:c9:44:d1:18:b1:22:b4:cf:de:bd:6c:7a:54 (ECDSA)
+|_  256 dc:ad:ca:3c:11:31:5b:6f:e6:a4:89:34:7c:9b:e5:50 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=4/30%OT=22%CT=1%CU=35216%PV=Y%DS=2%DC=T%G=Y%TM=5EAAD6D
+OS:5%P=x86_64-pc-linux-gnu)SEQ(SP=108%GCD=1%ISR=10B%TI=Z%CI=Z%TS=A)OPS(O1=M
+OS:54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%
+OS:O6=M54DST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%
+OS:DF=Y%T=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 42.186 days (since Thu Mar 19 14:49:13 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 8080/tcp)
+HOP RTT       ADDRESS
+1   158.95 ms 10.10.14.1
+2   163.15 ms 10.10.10.171
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 30 19:17:01 2020 -- 1 IP address (1 host up) scanned in 632.30 seconds

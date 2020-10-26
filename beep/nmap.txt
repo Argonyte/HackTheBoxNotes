@@ -1,0 +1,50 @@
+# Nmap 7.80 scan initiated Mon Apr  6 12:14:48 2020 as: nmap -T4 -p- -A -o nmap.txt 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up (0.15s latency).
+Not shown: 65522 closed ports
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 4.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 ad:ee:5a:bb:69:37:fb:27:af:b8:30:72:a0:f9:6f:53 (DSA)
+|_  2048 bc:c6:73:59:13:a1:8a:4b:55:07:50:f6:65:1d:6d:0d (RSA)
+110/tcp   open  pop3       Cyrus pop3d 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+|_pop3-capabilities: EXPIRE(NEVER) IMPLEMENTATION(Cyrus POP3 server v2) TOP UIDL APOP RESP-CODES LOGIN-DELAY(0) PIPELINING AUTH-RESP-CODE STLS USER
+111/tcp   open  rpcbind    2 (RPC #100000)
+143/tcp   open  imap       Cyrus imapd 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+|_imap-capabilities: IMAP4rev1 STARTTLS UNSELECT RIGHTS=kxte Completed SORT IDLE CONDSTORE BINARY MAILBOX-REFERRALS ACL LIST-SUBSCRIBED LISTEXT URLAUTHA0001 THREAD=ORDEREDSUBJECT RENAME X-NETSCAPE THREAD=REFERENCES NO LITERAL+ CATENATE ID ATOMIC SORT=MODSEQ OK CHILDREN MULTIAPPEND NAMESPACE ANNOTATEMORE QUOTA IMAP4 UIDPLUS
+878/tcp   open  status     1 (RPC #100024)
+993/tcp   open  ssl/imap   Cyrus imapd
+|_imap-capabilities: CAPABILITY
+995/tcp   open  pop3       Cyrus pop3d
+3306/tcp  open  mysql      MySQL (unauthorized)
+4190/tcp  open  sieve      Cyrus timsieved 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4 (included w/cyrus imap)
+4445/tcp  open  upnotifyp?
+4559/tcp  open  hylafax    HylaFAX 4.3.10
+5038/tcp  open  asterisk   Asterisk Call Manager 1.1
+10000/tcp open  http       MiniServ 1.570 (Webmin httpd)
+|_http-server-header: MiniServ/1.570
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=4/6%OT=22%CT=1%CU=38403%PV=Y%DS=2%DC=T%G=Y%TM=5E8AD323
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=B9%GCD=1%ISR=C3%TI=Z%CI=Z%II=I%TS=A)SEQ(SP
+OS:=B9%GCD=1%ISR=C3%TI=Z%CI=Z%TS=A)OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54
+OS:DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)WIN(W1=16A0%W2=16A0%
+OS:W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M54DNNSNW7%CC
+OS:=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=1
+OS:6A0%S=O%A=S+%F=AS%O=M54DST11NW7%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R
+OS:%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=
+OS:40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R
+OS:=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+Service Info: Hosts: example.com, localhost; OS: Unix
+
+TRACEROUTE (using port 8888/tcp)
+HOP RTT       ADDRESS
+1   313.17 ms 10.10.14.1
+2   313.12 ms 10.10.10.7
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  6 12:28:43 2020 -- 1 IP address (1 host up) scanned in 835.12 seconds

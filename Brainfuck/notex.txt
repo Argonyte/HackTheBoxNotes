@@ -1,0 +1,33 @@
+nmap scan
+go on website using https
+check the certificate
+check the issuer => E = orestis@brainfuck.htb
+		 => CN = brainfuck.htb
+		 => DNS Name: sup3rs3cr3t.brainfuck.htb
+		 => DNS Name: www.brainfuck.htb
+adding domains to /etc/hosts 
+open brainfuck and sup3rs3cr3t
+wpscan brainfuck
+shows WP Support PrivEsc 41006.txt Vuln > privescBF.txt
+edit the privesc file to include username and site and save it as .html 
+open a simplehttpserver login to localhost:8000 click on the exploit.html link
+click on go and be redirected to main site as admin
+go to settings easy wp smtp to get smtp password from dev tools console = kHGuERB29DNiNE
+orestis:kHGuERB29DNiNE ==> SMTP Creds
+create a evolution mail client using orestis and brainfuck.htb and port 143
+after accessing the email you will find root access to forums => Hi there, your credentials for our "secret" forum are below username: orestis password: kIEnnfEKJ#9UmdO
+going on to the forums you find the ssh key but its encrypted. it is custom encrypted using vignere cipher. using ascii tables and math try to find key. > key.txt
+after finding the password use keyed vignere to solve it
+click the link to get the id_rsa
+use ssh2john and then john to crack password
+cracking and the password is 3poulakia! 
+ssh idrsa orestis@brainfuck.htb
+cat user
+get debug
+RSA key
+get output.txt
+use python script to get plaintext
+use plain text convert it to hex then convert to ascii
+root flag
+#rooted
+
